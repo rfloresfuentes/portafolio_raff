@@ -1,3 +1,9 @@
 .text-decoration {
     text-decoration: none;
     }
+
+.project_img {
+    width: 350px;
+    /* height: 200px; */
+    margin-left: 3%;
+    }

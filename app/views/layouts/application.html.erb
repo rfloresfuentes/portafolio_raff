@@ -19,28 +19,26 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-          <%= link_to 'Home', '/', class: 'text-decoration' %>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <%= link_to 'Projects', 'pages/projects', class: 'text-decoration' %>
-            </li>
-            <li class="nav-item">
-              <%= link_to 'Contact', 'pages/contact', class: 'text-decoration' %>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
     <div class="d-flex justify-content-center">
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <%= link_to 'Inicio', '/', class: 'nav-link link-navbar' %>
+            </div>
+            <div class="navbar-nav">
+              <%= link_to 'Proyectos', '../pages/projects', class: "nav-link link-navbar" %>
+            </div>
+            <div class="navbar-nav">
+              <%= link_to 'Contacto', '../pages/contact', class: "nav-link link-navbar" %>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
       <%= yield %>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
